@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unbenanntes Dokument</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+	<div class="navigation">
+		<img class="logo" src="Logo.png" alt="Das Bild konnte nicht geladen werden">
+			<ul>
+				<li><a href ="#HOME" class="link">HOME</a></li>
+				<li><a href="#Wirüberuns" class="link" >WIR ÜBER UNS</a></li>
+				<li><a href="#Aktionen" class="link" >AKTIONEN</a></li>
+				<li><a href="#Terminvereinbarung" class="link" >TERMINVEREINBARUNG</a></li>
+				<li><a href="#Infos" class="link" >INFOS</a></li>	
+			</ul>
+	</div>
+	
+	<a name="HOME" ></a>
+	
+				<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="Slide1.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Slide2.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Slide3.png" style="width:100%">
+			</div>		
+			
+			<div class="mySlides fade">
+			  <img src="Slide4.png" style="width:100%">
+			</div>		
+			
+			<div class="mySlides fade">
+			  <img src="Slide5.png" style="width:100%">
+			</div>		
+					
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+				<span class="dot"></span> 
+			  <span class="dot"></span>
+
+				
+			</div>
+
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+	
+	
+	
+	<div class="information">
+		<a name="Wirüberuns" ><p class="Standardheader">WIR ÜBER UNS</p></a>
+			<img class="fraubild" src="bild_wiruberuns.png" alt="Das Bild konnte leider nicht laden.">
+		<div class="grauesbild"><img src="Gruppe 162.png" alt="">	
+		<div class="headlinesmall"><p>Damit ihre Optik stimmt</p></div>	
+		<div class="headlinebig">OPTIK TACK</div>
+			
+			
+		<div class="textnormal">
+			<p>Bei Optik Tack in Aalen erwartet Sie exzellente Beratung in <br>
+				angenehmer Atmosphäre. Wir setzen all unsere handwerklich <br>
+				-technischen Fertigkeiten für Ihre Augen, fürs bessere Sehen ein.
+			<br>
+			<br>
+				Und jenen Kundinnen und Kunden, die sich nur schlecht damit <br>
+				abfinden können, ab jetzt ständig eine Brille tragen zu müssen, <br>
+				sagen wir: Tragen Sie’s mit (modischer) Fassung!
+			</p>
+		</div>
+			
+		</div>
+	</div>
+	
+	<div class="Aktionen">
+		<a name="Aktionen" ><p class="Standardheader">AKTIONEN</p></a>
+		<div class="grid-container">
+  <div class="aktion1"><img src="Aktion1.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Rabatte auf <br> Sonnenbrillen für <br> Groß und Klein</p></div>
+  <div class="aktion2"><img src="Aktion2.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Sommerrätsel <br>für Kinder und <br>Erwachsene </p></div>
+  <div class="aktion3"><img src="Aktion3.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Gutscheine <br> zu gewinnen</p></div>
+  <div class="aktion4"><img src="Aktion4.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Schnelle <br> Brillenreparatur</p></div>
+  <div class="aktion5"><img src="Aktion5.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Verschenken <br> Sie gute Sicht!</p></div>
+  <div class="aktion6"><img src="Aktion6.png" alt="Das Bild konnte leider nicht laden."><p class="aktiontext">Lassen <br> Sie sich beraten!</p></div>
+</div>
+	</div>
+	
+	<div class="Terminvereinbarung">
+		<a name="Terminvereinbarung" ><p class="Standardheader">TERMINVEREINBARUNG</p></a>
+		<div class="Kontaktformular">
+			<p class="headline1"> Vereinbaren Sie einen</p>
+			<p class="headline2">TERMIN MIT UNS!</p>
+			<p class="headline3">Wir melden uns umgehend mit einem Terminvorschlag.</p>
+			<form>
+				<label for="vname">Name</label>
+			  <input type="text" id="nname" name="Vorname">
+				  <label for="vname">Vorname</label>
+			  <input type="text" id="vname" name="Nachname" required><br>
+				    <label for="E-Mailadresse">E-Mailadresse</label>
+			  <input type="email" id="email" name="E-Mailadresse" required>
+				  <label for="Telefon">Telefon</label>
+			  <input type="tel" id="telefon" name="Telefon" required><br>
+				  <label for="text">Ihr Anliegen in Kürze</label>
+			  <textarea type="text" id="anliegen" name="Anliegen" placeholder="(Brille, Kontaktlinsen, optometrische Messung, usw.)"></textarea>
+				  <input type="submit" id="absenden" required>
+			</form>
+		</div>
+		
+		<img class="fraubild" id="mannbild" src="Terminvereinbarung.png" alt="Das Bild konnte leider nicht laden.">
+	</div>
+	
+	<div class="Fusszeile">
+		<h1>Tragen Sie's mit modischer Fassung!</h1>
+	</div>
+	
+	<a name="Infos" ></a>
+		<div class="Ende">
+			<div class="ContainerBox">
+			<div class="BOX1">
+				<h1>Impressum</h1>
+				<br>
+					<p>
+						Optik Tack GmbH <br>
+						Mozartstraße 37 <br>
+						73430 Aalen <br>
+						Tel.: 07361/123451 <br>
+						info@optik-tack.de <br>
+						www.optik-tack.de <br>
+							<br>
+						
+						Geschäftsführer: Anton Tack <br>
+						Amtsgericht Aalen <br>
+						Handelsregister Nr. XXX000XXX, <br>
+						Finanzamt Aalen <br>
+						USt.IdNr.: DE10111011
+					</p>
+			</div>
+			
+			<div class="BOX2">
+				<h1>Datenschutz</h1>
+				<br>
+					<p>
+						Datenschutzhinweise gemäß <br>
+						EU-Datenschutz-
+						Grundverordnung <br>
+						(DSGVO)
+					</p>
+					<br>
+					<br>
+				<h1>Öffnungszeiten</h1>	
+				<br>
+					<p>
+						Mo–Fr 9 Uhr bis 18 Uhr <br>
+						Sa 9 Uhr bis 13.30 Uhr
+					</p>
+			</div>
+			
+			<div class="BOX3">
+				<h1>Hier finden Sie <br>
+					Uns!
+				</h1>	
+				<iframe width="290" height="300" src="https://maps.google.de/maps?hl=de&q=%20mozartstraße+37%20Aalen&t=&z=10&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"> </iframe>
+				
+			</div>
+			</div>
+		</div>
+			
+
+	
+	
+</body>
+</html>
